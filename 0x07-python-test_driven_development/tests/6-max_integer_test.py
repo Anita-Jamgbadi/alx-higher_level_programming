@@ -42,17 +42,17 @@ class TestMaxInteger(unittest.TestCase):
     def test_ints_and_floats(self):
         """Tests a list of ints and floats"""
         ints_and_floats = [5.32, 6.7, 15, -9, 12.3]
-        self.assertEqual(max_integer(ints_and_floats), 15.5)
+        self.assertEqual(max_integer(ints_and_floats), 15)
 
     def test_string(self):
         """Tests a string"""
         string = 'Right'
-        self.assertEqual(max_integer(string), 'r')
+        self.assertEqual(max_integer(string), 't')
 
     def test_list_of_strings(self):
         """Tests a list of strings"""
         strings = ['I', 'am', 'trying', 'so', 'hard']
-        self.assertEqual(max_integer(strings), 'name')
+        self.assertEqual(max_integer(strings), 'trying')
 
     def test_empty_string(self):
         """ Tests and empty string """
