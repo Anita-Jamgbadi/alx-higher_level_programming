@@ -3,7 +3,8 @@
 
 
 def say_my_name(first_name, last_name=""):
-    """ Prints fname and lname under the condition that they are both strings """
+    """ Prints fname and lname under the
+    condition that they are both strings """
 
     if not isinstance(first_name, str):
         raise TypeError('first_name must be a string')
