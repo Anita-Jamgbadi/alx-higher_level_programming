@@ -58,7 +58,6 @@ class Rectangle:
         else:
             return rect_2
 
-
     @property
     def width(self):
         """ Getter for the property 'width' """
