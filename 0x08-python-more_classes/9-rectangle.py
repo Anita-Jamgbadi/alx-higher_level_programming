@@ -62,8 +62,10 @@ class Rectangle:
     def square(cls, size=0):
         """ Returns a new Rectangle instance with width == height == size """
 
-        if isinstance (size, int) and size >=0:
+        if isinstance(size, int) and size >= 0:
             return Rectangle(size, size)
+        else:
+            raise Exception
 
     @property
     def width(self):
