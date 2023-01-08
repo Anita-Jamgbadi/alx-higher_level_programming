@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+i
 """ This module defines a Rectangle """
 
 
@@ -62,10 +63,12 @@ class Rectangle:
     def square(cls, size=0):
         """ Returns a new Rectangle instance with width == height == size """
 
-        if isinstance(size, int) and size >= 0:
-            return Rectangle(size, size)
-        else:
-            raise Exception
+        if not isinstance(size, int):
+            raise TypeError
+        if size < 0:
+            raise ValueError
+
+        return Rectangle(size, size)
 
     @property
     def width(self):
