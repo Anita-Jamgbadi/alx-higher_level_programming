@@ -3,6 +3,7 @@
 
 
 def lookup(obj):
-    """ Lookup and return a list of the available atts and methods for 'obj' """
+    """ Lookup and return a list of the
+    available atts and methods for 'obj' """
 
-    return (obj.__dict__)
+    return dir(obj)
