@@ -33,7 +33,7 @@ class Rectangle(Base):
         return self.__x
 
     @property
-    def y(Self):
+    def y(self):
         """ returns the of y """
         return self.__y
 
