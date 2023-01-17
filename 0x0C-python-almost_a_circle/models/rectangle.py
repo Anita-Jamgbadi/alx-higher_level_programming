@@ -82,4 +82,4 @@ class Rectangle(Base):
         if value <= 0:
             raise ValueError('Value must be greater then 0')
 
-        self.__y = y
+        self.__y = value
