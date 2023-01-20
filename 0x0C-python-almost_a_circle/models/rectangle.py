@@ -129,3 +129,24 @@ class Rectangle(Base):
             for col in range(self.__width):
                 print('#', end='')
             print()
+
+    def update(self, *args):
+        """ assigns an arg to each attribute """
+
+        if len(args) != 0:
+            i = 0
+            for arg in args:
+                if i == 0:
+                    if arg is None:
+                        self.__init__(self.width, self.height, self.x, self.y)
+                    else:
+                        self.id = arg
+                elif i == 1:
+                    self.width = arg
+                elif i == 2:
+                    self.height = arg
+                elif i == 3:
+                    self.x = arg
+                elif i == 4:
+                    self.y = arg
+                i += 1
