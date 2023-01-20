@@ -107,6 +107,12 @@ class Rectangle(Base):
 
         self.__y = value
 
+    def __str__(self):
+        """ Prints the rectangle in a human friendly manner """
+
+        return (f'[Rectangle] ({self.id}) {self.__x}/\
+{self.__y} - {self.__width}/{self.__height}')
+
     def area(self):
         """ This method returns the area of the rectangle object """
 
