@@ -10,7 +10,7 @@ if __name__ == '__main__':
     '''
     Fetch states from db
     '''
-    connect_db = MySqldb.connect(
+    connect_db = MySQLdb.connect(
             host='localhost', user=argv[1], port=3306,
             passwd=argv[2], db=argv[3])
 
