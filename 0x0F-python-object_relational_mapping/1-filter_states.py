@@ -1,18 +1,18 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 '''
 This module lists all states starting with N
 '''
 
-import MySQLdb
+import MySQLdb as db
 from sys import argv
 
 '''
 Fetch states that start with N in ASC order
 '''
 
-if __name__ = '__main__':
+if __name__ == '__main__':
 
-    connect_db = MySQLdb.connect(
+    connect_db = db.connect(
             host='localhost', user=argv[1], port=3306,
             passwd=argv[2], db=argv[3])
 
