@@ -6,10 +6,11 @@ This module lists all states starting with N
 import MySQLdb
 from sys import argv
 
+'''
+Fetch states that start with N in ASC order
+'''
+
 if __name__ = '__main__':
-    '''
-    Fetch data from database
-    '''
 
     connect_db = MySQLdb.connect(
             host='localhost', user=argv[1], port=3306,
